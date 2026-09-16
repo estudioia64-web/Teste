@@ -41,7 +41,7 @@ export const VETPET_INFO: ContactInfo = {
     "https://wa.me/5575998452544?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento%20na%20VetPet%20Cl%C3%ADnica%20Veterin%C3%A1ria!",
   phoneRaw: "5574999154388",
   phoneFormatted: "(74) 99915-4388",
-  phoneLink: "tel:+5574999154388",
+  phoneLink: "https://wa.me/5574999154388",
   email: "vetpetclinica2026@gmail.com",
   addressStreet: "Rua Ângelo França Dourado",
   addressNumber: "94",

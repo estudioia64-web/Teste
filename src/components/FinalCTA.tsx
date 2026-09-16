@@ -48,7 +48,10 @@ export const FinalCTA: React.FC<FinalCTAProps> = ({ onOpenAppointmentModal }) =>
             {/* Phone */}
             <a
               href={VETPET_INFO.phoneLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2.5 hover:text-emerald-300 transition-colors group card-interactive p-2 rounded-xl"
+              title="Falar no WhatsApp"
             >
               <div className="w-9 h-9 rounded-full bg-emerald-700/40 border border-emerald-500/40 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Phone className="w-4 h-4 text-emerald-300" />

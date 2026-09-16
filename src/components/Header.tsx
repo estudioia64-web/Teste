@@ -218,10 +218,12 @@ export const Header: React.FC<HeaderProps> = ({
 
             <a
               href={VETPET_INFO.phoneLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-4 rounded-full text-sm min-h-[44px] btn-interactive"
             >
               <Phone className="w-4 h-4 text-emerald-700" />
-              <span>Ligar: {VETPET_INFO.phoneFormatted}</span>
+              <span>WhatsApp: {VETPET_INFO.phoneFormatted}</span>
             </a>
 
             <button

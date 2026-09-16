@@ -102,9 +102,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenLegalModal }) => {
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                 <span>
-                  Telefone fixo/ligações:{' '}
+                  Telefone / WhatsApp:{' '}
                   <a
                     href={VETPET_INFO.phoneLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white font-bold hover:underline"
                   >
                     {VETPET_INFO.phoneFormatted}

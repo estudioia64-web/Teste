@@ -35,11 +35,13 @@ export const TopBar: React.FC = () => {
             <span>WhatsApp: {VETPET_INFO.whatsappFormatted}</span>
           </a>
 
-          {/* Direct Phone */}
+          {/* Direct Phone / WhatsApp */}
           <a
             href={VETPET_INFO.phoneLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 hover:text-white transition-colors duration-200 font-medium"
-            title="Ligar para a VetPet"
+            title="Conversar no WhatsApp"
           >
             <Phone className="w-3.5 h-3.5 text-[#4ade80] flex-shrink-0" />
             <span>Tel: {VETPET_INFO.phoneFormatted}</span>

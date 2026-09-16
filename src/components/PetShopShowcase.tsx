@@ -79,10 +79,12 @@ export const PetShopShowcase: React.FC = () => {
 
               <a
                 href={VETPET_INFO.phoneLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-emerald-950/90 hover:bg-emerald-900 border border-emerald-700/50 text-emerald-200 hover:text-white font-semibold text-xs px-4 py-3 rounded-full transition-colors btn-interactive"
-                title="Ligar para a loja"
+                title="Conversar no WhatsApp"
               >
-                <span>Ligar: {VETPET_INFO.phoneFormatted}</span>
+                <span>WhatsApp: {VETPET_INFO.phoneFormatted}</span>
               </a>
             </div>
 

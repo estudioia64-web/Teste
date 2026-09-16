@@ -213,8 +213,13 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
             <div className="text-center">
               <span className="text-xs text-gray-500">
-                Prefere ligar?{' '}
-                <a href={VETPET_INFO.phoneLink} className="font-semibold text-emerald-800 hover:underline">
+                Prefere conversar diretamente?{' '}
+                <a
+                  href={VETPET_INFO.phoneLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-emerald-800 hover:underline"
+                >
                   {VETPET_INFO.phoneFormatted}
                 </a>
               </span>

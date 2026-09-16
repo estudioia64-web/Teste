@@ -83,8 +83,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAppointmentModal }) => {
             <div className="flex items-center gap-2 text-xs sm:text-sm text-emerald-200/90 pt-1 animate-fade-in-up delay-250">
               <Phone className="w-4 h-4 text-[#4ade80]" />
               <span>
-                Atendimento telefônico direto:{' '}
-                <a href={VETPET_INFO.phoneLink} className="font-bold text-white hover:text-emerald-300 underline underline-offset-2 transition-colors">
+                Atendimento direto:{' '}
+                <a
+                  href={VETPET_INFO.phoneLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-white hover:text-emerald-300 underline underline-offset-2 transition-colors"
+                >
                   {VETPET_INFO.phoneFormatted}
                 </a>
               </span>

@@ -39,7 +39,7 @@ define('VETPET_HOURS', 'Seg a Sáb - 08h às 18h');
 
 // Links
 define('WHATSAPP_LINK', 'https://wa.me/' . VETPET_WHATSAPP_RAW . '?text=' . urlencode('Olá, gostaria de agendar um atendimento na VetPet Clínica Veterinária!'));
-define('PHONE_LINK', 'tel:' . VETPET_PHONE_RAW);
+define('PHONE_LINK', 'https://wa.me/' . VETPET_PHONE_RAW);
 define('MAPS_URL', 'https://www.google.com/maps/search/?api=1&query=' . urlencode(VETPET_ADDRESS));
 ?>`,
     },

@@ -26,7 +26,12 @@ export const FullWidthMap: React.FC = () => {
               </p>
               <div className="flex items-center gap-2 text-xs text-emerald-300 mt-1">
                 <Phone className="w-3 h-3 text-emerald-400" />
-                <a href={VETPET_INFO.phoneLink} className="hover:underline font-semibold">
+                <a
+                  href={VETPET_INFO.phoneLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline font-semibold"
+                >
                   {VETPET_INFO.phoneFormatted}
                 </a>
               </div>
@@ -94,7 +99,12 @@ export const FullWidthMap: React.FC = () => {
               <Phone className="w-3.5 h-3.5 text-emerald-400 flex-shrink-0" />
               <span>
                 Atendimento:{' '}
-                <a href={VETPET_INFO.phoneLink} className="text-white font-semibold hover:underline">
+                <a
+                  href={VETPET_INFO.phoneLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white font-semibold hover:underline"
+                >
                   {VETPET_INFO.phoneFormatted}
                 </a>
               </span>

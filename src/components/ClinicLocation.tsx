@@ -66,7 +66,10 @@ export const ClinicLocation: React.FC = () => {
 
                 <a
                   href={VETPET_INFO.phoneLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-200 font-semibold text-sm px-5 py-3 rounded-full transition-colors btn-interactive"
+                  title="Falar no WhatsApp"
                 >
                   <Phone className="w-4 h-4 text-emerald-700" />
                   <span>{VETPET_INFO.phoneFormatted}</span>

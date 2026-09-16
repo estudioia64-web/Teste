@@ -235,10 +235,12 @@ export const Services: React.FC<ServicesProps> = ({ onOpenAppointmentModal }) =>
                 <div className="flex items-center justify-between pt-2 border-t border-gray-100 text-xs">
                   <a
                     href={VETPET_INFO.phoneLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-emerald-700 font-semibold hover:underline flex items-center gap-1.5"
                   >
                     <Phone className="w-3.5 h-3.5 text-emerald-600" />
-                    <span>Ligar agora: {VETPET_INFO.phoneFormatted}</span>
+                    <span>WhatsApp / Contato: {VETPET_INFO.phoneFormatted}</span>
                   </a>
 
                   <button
