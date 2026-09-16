@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 960" width="800" height="960" fill="none">
+  <defs>
+    <!-- Lime green shield gradient -->
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#73c846" />
+      <stop offset="50%" stop-color="#5fb635" />
+      <stop offset="100%" stop-color="#4ba226" />
+    </linearGradient>
+
+    <!-- VetPet text gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4eb83e" />
+      <stop offset="45%" stop-color="#349b2c" />
+      <stop offset="100%" stop-color="#1f7422" />
+    </linearGradient>
+
+    <!-- Drop shadow for shield -->
+    <filter id="shieldShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#02140a" flood-opacity="0.35" />
+    </filter>
+
+    <!-- Drop shadow for text -->
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#051f0f" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- SHIELD EMBLEM -->
+  <g transform="translate(150, 40)" filter="url(#shieldShadow)">
+    <!-- 1. Lime Green Outer Shield (House Pentagon with rounded corners) -->
+    <path d="M250 18 L460 148 C476 158 484 176 484 195 L484 450 C484 480 460 504 430 504 L70 504 C40 504 16 480 16 450 L16 195 C16 176 24 158 40 148 Z" 
+          fill="url(#limeGrad)" />
+
+    <!-- 2. Pure White Inner Shield -->
+    <path d="M250 50 L438 166 C448 172 454 184 454 196 L454 444 C454 466 436 484 414 484 L86 484 C64 484 46 466 46 444 L46 196 C46 184 52 172 62 166 Z" 
+          fill="#FFFFFF" />
+
+    <!-- 3. Forest Green Silhouettes inside White Shield -->
+    <g fill="#134e23">
+      <!-- Cat Silhouette (Left) facing right -->
+      <path d="
+        M76 330
+        C76 270 94 210 120 162
+        C125 154 132 140 134 122
+        C135 116 142 120 148 128
+        C155 138 160 148 166 158
+        C175 156 184 160 190 168
+        C196 176 197 186 193 194
+        C199 200 206 208 206 218
+        C206 226 198 234 190 240
+        C196 245 196 256 190 262
+        C183 268 172 270 164 266
+        C158 282 150 300 147 320
+        C144 342 147 364 152 384
+        C138 376 120 370 106 356
+        C88 342 76 338 76 330 Z
+      " />
+
+      <!-- Cat Eye (White dot) -->
+      <circle cx="168" cy="188" r="7.5" fill="#FFFFFF" />
+
+      <!-- Dog Silhouette (Right) facing left -->
+      <path d="
+        M225 170
+        C233 144 255 122 284 114
+        C318 104 352 118 372 142
+        C388 164 394 194 390 220
+        C386 250 376 276 362 304
+        C370 336 378 376 380 416
+        C380 448 375 470 364 476
+        L268 476
+        C274 454 280 428 282 400
+        C282 370 278 340 268 314
+        C260 290 246 268 232 246
+        C222 232 210 222 206 206
+        C202 192 210 180 225 170 Z
+      " />
+
+      <!-- Dog Eye (White dot) -->
+      <circle cx="260" cy="166" r="8.5" fill="#FFFFFF" />
+
+      <!-- Dog Ear Separation Contour (White curved line) -->
+      <path d="M322 134 C334 158 348 188 345 222 C342 254 328 278 312 288" 
+            stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none" />
+
+      <!-- Stethoscope Loop -->
+      <path d="
+        M74 326 
+        C70 380 102 436 164 466 
+        C216 490 286 488 334 458
+        C348 450 358 436 364 422
+      " stroke="#134e23" stroke-width="30" stroke-linecap="round" fill="none" />
+      
+      <!-- White highlight on stethoscope tubing -->
+      <path d="
+        M74 326 
+        C70 380 102 436 164 466 
+        C216 490 286 488 334 458
+        C348 450 358 436 364 422
+      " stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.7" />
+
+      <!-- Stethoscope Bell / Chestpiece -->
+      <circle cx="364" cy="420" r="33" fill="#134e23" stroke="#FFFFFF" stroke-width="8" />
+      <circle cx="364" cy="420" r="12" fill="#FFFFFF" />
+    </g>
+  </g>
+
+  <!-- TYPOGRAPHY: VetPet (Custom bouncy lettering with thick white sticker border) -->
+  <g filter="url(#textShadow)">
+    <!-- Layer 1: Dark green outer shadow border -->
+    <text x="400" y="740" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Fredoka', 'Quicksand', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="192" 
+          letter-spacing="-3"
+          stroke="#062410" 
+          stroke-width="48" 
+          stroke-linejoin="round" 
+          stroke-linecap="round" 
+          fill="#062410">VetPet</text>
+
+    <!-- Layer 2: Crisp pure white sticker contour border -->
+    <text x="400" y="740" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Fredoka', 'Quicksand', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="192" 
+          letter-spacing="-3"
+          stroke="#FFFFFF" 
+          stroke-width="36" 
+          stroke-linejoin="round" 
+          stroke-linecap="round" 
+          fill="#FFFFFF">VetPet</text>
+
+    <!-- Layer 3: Vibrant green fill with vertical gradient -->
+    <text x="400" y="740" 
+          text-anchor="middle" 
+          font-family="'Outfit', 'Fredoka', 'Quicksand', 'Arial Black', sans-serif" 
+          font-weight="900" 
+          font-size="192" 
+          letter-spacing="-3"
+          fill="url(#textGrad)">VetPet</text>
+  </g>
+
+  <!-- SUBTITLE: CLÍNICA VETERINÁRIA & PET SHOP -->
+  
+  <text x="400" y="850" 
+        text-anchor="middle" 
+        font-family="'Montserrat', 'Outfit', 'Plus Jakarta Sans', sans-serif" 
+        font-weight="800" 
+        font-size="30" 
+        letter-spacing="2.5" 
+        fill="#FFFFFF">CLÍNICA VETERINÁRIA &amp; PET SHOP</text>
+</svg>

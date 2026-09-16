@@ -1,0 +1,307 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1c2e24;
+    background-color: #f8faf8;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-script {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #15803d;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f5127;
+}
+
+/* =========================================================================
+   VETPET ANIMATION SYSTEM - PREMIUM, MODERN & FLUID
+   ========================================================================= */
+
+/* --- Keyframe Definitions --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -18px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale3d(0.96, 0.96, 1);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+@keyframes floatSlowReverse {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 8px, 0);
+  }
+}
+
+@keyframes subtleAmbientPulse {
+  0%, 100% {
+    opacity: 0.05;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.09;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.12;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.22;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes buttonShine {
+  0% {
+    left: -120%;
+  }
+  100% {
+    left: 200%;
+  }
+}
+
+@keyframes pulseBeacon {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* --- Animation Helper Classes --- */
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatSlowReverse 7s ease-in-out infinite;
+}
+
+.animate-ambient-pulse {
+  animation: subtleAmbientPulse 8s ease-in-out infinite;
+}
+
+.animate-glow-pulse {
+  animation: glowPulse 7s ease-in-out infinite;
+}
+
+.animate-beacon {
+  animation: pulseBeacon 2.5s infinite;
+}
+
+/* Stagger delays */
+.delay-75 { animation-delay: 75ms; }
+.delay-100 { animation-delay: 100ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-250 { animation-delay: 250ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+
+/* --- Micro-Interactions: Buttons --- */
+.btn-interactive {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.2s ease,
+              border-color 0.2s ease;
+  will-change: transform;
+}
+
+.btn-interactive:hover {
+  transform: translateY(-2px);
+}
+
+.btn-interactive:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Subtle light shine on hover for primary CTAs */
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+  transform: skewX(-20deg);
+  pointer-events: none;
+  transition: none;
+}
+
+.btn-shine:hover::after {
+  animation: buttonShine 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Micro-Interactions: Cards --- */
+.card-interactive {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease,
+              background-color 0.25s ease;
+  will-change: transform;
+}
+
+.card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(5, 31, 17, 0.12), 0 4px 8px -2px rgba(5, 31, 17, 0.04);
+}
+
+/* --- Micro-Interactions: Images --- */
+.img-zoom-subtle {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.img-zoom-subtle:hover,
+.group:hover .img-zoom-subtle {
+  transform: scale(1.03);
+}
+
+/* --- Scroll Reveal Utilities --- */
+.reveal-init {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+/* --- Accessibility: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  
+  .animate-float-slow,
+  .animate-float-reverse,
+  .animate-ambient-pulse,
+  .animate-glow-pulse,
+  .animate-beacon {
+    animation: none !important;
+  }
+}
+
+

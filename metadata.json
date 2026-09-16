@@ -1,0 +1,6 @@
+{
+  "name": "VetPet Clínica Veterinária & Pet Shop",
+  "description": "Website oficial da VetPet Clínica Veterinária & Pet Shop em Irecê/BA. Atendimento veterinário completo, cuidado preventivo e pet shop.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
