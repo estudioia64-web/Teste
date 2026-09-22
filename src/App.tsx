@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { TopBar } from './components/TopBar';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -34,6 +35,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#f8faf8] font-['Plus_Jakarta_Sans',sans-serif] text-[#1c2e24] antialiased">
+      <Analytics />
       {/* 1. Top Informational Bar */}
       <TopBar />
 
