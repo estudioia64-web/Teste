@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { TopBar } from './components/TopBar';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -103,6 +104,9 @@ export default function App() {
         isOpen={phpModalOpen}
         onClose={() => setPhpModalOpen(false)}
       />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
